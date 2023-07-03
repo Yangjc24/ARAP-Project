@@ -1,0 +1,7 @@
+def meta():
+  global SLEEP, THIRST, HUNGER
+  SLEEP -= 1 
+  THIRST -= 1
+  HUNGER -= 1
+
+

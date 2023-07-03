@@ -1,0 +1,10 @@
+Intro to Git
+
+1. create/initialize repo
+2. make changes on local pc
+3. add to staging area 
+4. commit and commit message
+5. push/publish
+6. branches - using git desktop
+
+
