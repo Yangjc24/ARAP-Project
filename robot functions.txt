@@ -4,4 +4,12 @@ def meta():
   THIRST -= 1
   HUNGER -= 1
 
-
+def alive():
+ if SLEEP <= 0:
+	return FALSE
+ if THIRST <= 0:
+	return FALSE
+ if HUNGER <= 0:
+	return FALSE
+ else
+	return TRUE
