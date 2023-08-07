@@ -1,0 +1,49 @@
+#VRML_SIM R2023a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/robots/gctronic/e-puck/protos/E-puckGroundSensors.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.37291524915212226 0.36920595804373235 0.8512468369954866 1.7410255406813655
+  position 0.0807475704785634 -3.745589521807947 3.962285587176403
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+  castShadows FALSE
+}
+RectangleArena {
+  floorTileSize 1 1
+  floorAppearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "../../../circle.jpg"
+      ]
+    }
+    metalness 0
+  }
+}
+E-puck {
+  hidden linearVelocity_0 -0.05406480171287902 -0.015221757419061038 0.0004413993950061486
+  hidden angularVelocity_0 -0.0002958639029684023 0.00045784475921408613 0.08760728630659442
+  hidden translation_1 0 0.025999999999999995 0.02
+  hidden rotation_1 0 1 0 0.42890239938989755
+  hidden linearVelocity_1 -0.05188682146920889 -0.014606126886803277 0.0004441165953968262
+  hidden angularVelocity_1 0.7274559552759784 -2.5840192819205874 0.08799706639307991
+  hidden translation_2 0 -0.02600000000000004 0.02
+  hidden rotation_2 0 1 0 0.4695494566176491
+  hidden linearVelocity_2 -0.056234945444872425 -0.015832712810059005 0.00044374150758570415
+  hidden angularVelocity_2 0.7944639971031301 -2.8219897569086387 0.08807230791892878
+  translation 0.5641003113684075 -0.40996153294102317 -0.00012053290196556432
+  rotation 0.00040593613764089626 6.196260920612874e-05 0.99999991568824 -2.865162091134392
+  controller "BBR"
+  groundSensorsSlot [
+    E-puckGroundSensors {
+    }
+  ]
+}

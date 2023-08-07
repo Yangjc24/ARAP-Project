@@ -1,0 +1,41 @@
+#VRML_SIM R2023a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/robots/gctronic/e-puck/protos/E-puckGroundSensors.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.37291524915212226 0.36920595804373235 0.8512468369954866 1.7410255406813655
+  position 0.0807475704785634 -3.745589521807947 3.962285587176403
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+  castShadows FALSE
+}
+RectangleArena {
+  floorSize 2 2
+  floorTileSize 2 2
+  floorAppearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "../../../floor.jpg"
+      ]
+    }
+    metalness 0
+  }
+}
+E-puck {
+  translation -0.594672 -0.606217 0
+  rotation 0 0 1 1.5708
+  controller "get_food_pixel"
+  camera_rotation 0 0 1 0.5
+  groundSensorsSlot [
+    E-puckGroundSensors {
+    }
+  ]
+}
